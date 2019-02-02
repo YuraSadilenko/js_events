@@ -2,4 +2,4 @@
 js practice events
 
 
-[GHPage](https://yurasadilenko.github.io/js_events/)
+[GHPage](https://yurasadilenko.github.io/js_events/src/)
