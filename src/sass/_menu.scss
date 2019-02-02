@@ -1,11 +1,12 @@
 .menu {
-  position: relative;
-  display: none;
-  background-color: rgba(182, 187, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: rgb(182, 187, 255);
   width: 200px;
   padding: 50px 10px 10px;
   border-radius: 5px;
-  transition: all .3s;
+  transition: all .5s;
 
   &__btn {
     position: relative;
@@ -15,6 +16,7 @@
     border-radius: 50%;
     border: 2px solid rgb(131, 131, 131);
     transition: all .2s;
+    cursor: pointer;
 
     &:hover::after {
       content: "";
@@ -22,8 +24,8 @@
       top: 50%;
       left: 50%;
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 25px;
+      height: 25px;
       background-color: rgb(131, 131, 131);
       border-radius: 50%;
       transform: translate(-50%, -50%);
@@ -74,7 +76,7 @@
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 0;
+    padding: 40px 0;
     transition: all .3s;
 
 
@@ -82,4 +84,9 @@
       transform: translateY(-2px) scale(1.1);
     }
   }
+}
+
+.activeNav {
+  // display: block;
+  left: 0;
 }
