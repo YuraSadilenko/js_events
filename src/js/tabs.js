@@ -2,8 +2,8 @@ var tab;
 var tabContent;
 
 window.onload = function() {
-  tab = document.getElementsByClassName('tabs__btn');
   tabContent = document.getElementsByClassName('tabs__content');
+  tab = document.getElementsByClassName('tabs__btn');
   hideTabContent(1);
 }
 
