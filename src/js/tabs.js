@@ -11,17 +11,19 @@ function hideTabContent(a) {
   for (var i = a; i < tabContent.length; i++) {
     tabContent[i].classList.remove('show');
     tabContent[i].classList.add('hide');
-    tab[i].classList.remove('activeTab');
   }
 }
 
 document.getElementById('tabs').onclick = function(event) {
   var target = event.target;
-  if (target.className == 'tabs__btn') {
+  if (target.className === 'tabs__btn') {
     for (var j = 0; j < tab.length; j++) {
-      if(target == tab[j]){
+      if(target === tab[j]){
         showTabContent(j);
         break;
+      }
+      if( target !== tab[j]) {
+        tab[j].classList.remove('activeTab');
       }
     }
   }
