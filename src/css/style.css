@@ -191,7 +191,6 @@ body {
 
 .tabs__link {
   position: fixed;
-  left: 40px;
   bottom: 40px;
   display: inline-block;
   text-decoration: none;
@@ -205,6 +204,14 @@ body {
   -o-transition: .5s;
   transition: .5s;
   z-index: 1000;
+}
+
+.tabs__link--left {
+  left: 40px;
+}
+
+.tabs__link--right {
+  right: 40px;
 }
 
 .tabs__link:hover {

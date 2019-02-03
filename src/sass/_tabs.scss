@@ -5,7 +5,6 @@
 
   &__link {
     position: fixed;
-    left: 40px;
     bottom: 40px;
     display: inline-block;
     text-decoration: none;
@@ -16,6 +15,15 @@
     animation: tabsLink 1s ease-out infinite;
     transition: .5s;
     z-index: 1000;
+
+    &--left {
+      left: 40px;
+    }
+
+    &--right {
+      right: 40px;
+    }
+
 
     &:hover {
       color: rgb(253, 51, 51);

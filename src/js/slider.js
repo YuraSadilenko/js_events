@@ -1,19 +1,19 @@
 (function () {
-  var carouselArr = [
-    {image: 'car.jpg', alt: 'Car'}, 
-    {image: 'apple.jpg', alt: 'Apple'}
-  ];
-  var carouselIndex = 0;
-  var newSlider = [
-    {image: 'peach.jpg', alt: 'peach'}, 
-    {image: 'pineapple.jpg', alt: 'pineapple'},
-    {image: 'tomato.jpg', alt: 'tomato'}
-  ];
+  // var carouselArr = [
+  //   {image: 'car.jpg', alt: 'Car'}, 
+  //   {image: 'apple.jpg', alt: 'Apple'}
+  // ];
+  // var carouselIndex = 0;
+  // var newSlider = [
+  //   {image: 'peach.jpg', alt: 'peach'}, 
+  //   {image: 'pineapple.jpg', alt: 'pineapple'},
+  //   {image: 'tomato.jpg', alt: 'tomato'}
+  // ];
 
   var slider = document.getElementById('slider');
   var slide = slider.getElementsByClassName('slider__img');
 
-  console.log(slide)
+  console.log(slider)
 
   function getSliderInfo(a) {
     if (a < carouselArr.length) {
