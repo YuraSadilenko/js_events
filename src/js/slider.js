@@ -1,19 +1,9 @@
 (function () {
-  // var carouselArr = [
-  //   {image: 'car.jpg', alt: 'Car'}, 
-  //   {image: 'apple.jpg', alt: 'Apple'}
-  // ];
-  // var carouselIndex = 0;
-  // var newSlider = [
-  //   {image: 'peach.jpg', alt: 'peach'}, 
-  //   {image: 'pineapple.jpg', alt: 'pineapple'},
-  //   {image: 'tomato.jpg', alt: 'tomato'}
-  // ];
-
+  var images = ['Apple.jpg', 'Car.jpg', 'cat.jpg'];
   var slider = document.getElementById('slider');
   var slide = slider.getElementsByClassName('slider__img');
 
-  console.log(slider)
+  console.log(slider);
 
   function getSliderInfo(a) {
     if (a < carouselArr.length) {
